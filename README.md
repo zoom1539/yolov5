@@ -17,7 +17,7 @@ cp data/coco128.yaml your_dataset.yaml
 
 # Step 5
 ```
-python train.py --img 640 --batch 16 --epochs 50 --data your_dataset.yaml --weights yolov5s.pt
+python train.py --img 640 --batch 16 --epochs 50 --data data/your_dataset.yaml --weights yolov5s.pt
 ```
 # Step 6
 生成wts文件
