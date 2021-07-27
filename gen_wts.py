@@ -1,6 +1,6 @@
 """
 Usage:
-    $ python gen_wts.py yolov5s.py
+    $ python gen_wts.py yolov5s.pt
 """
 import torch
 import struct
