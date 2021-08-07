@@ -4,7 +4,8 @@ pip install -r requirements.txt  # install
 ```
 # Step 2
 
-将yolo格式的标注数据放入../datasets,设置训练集和验证集 
+1. 将yolo格式的标注数据放入../datasets,
+2. python zmh/partition_train_val.py设置训练集和验证集 
 
 # Step 3
 ```
