@@ -9,16 +9,16 @@ def listdir(dir, list_name):
             list_name.append(file_path)
 
 if __name__ == "__main__":
-    work_dir = '/root/PLATFORM/pb_train/datasets/phone_indoor/images/train'
+    work_dir = '/root/PLATFORM/pb_train/datasets/smoking/images/train'
     list_name = []
     listdir(work_dir, list_name)
 
     for i, path in enumerate(list_name):
         if i % 10 == 0:
-            dst = '/root/PLATFORM/pb_train/datasets/phone_indoor/images/val'
+            dst = '/root/PLATFORM/pb_train/datasets/smoking/images/val'
             os.system('mv {} {}'.format(path, dst))
             txt_path = path.replace('images','labels').replace('jpg','txt')
             if os.path.exists(txt_path):
-                txt_dst = '/root/PLATFORM/pb_train/datasets/phone_indoor/labels/val'
+                txt_dst = '/root/PLATFORM/pb_train/datasets/smoking/labels/val'
                 os.system('mv {} {}'.format(txt_path, txt_dst))
 
